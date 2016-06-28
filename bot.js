@@ -61,6 +61,7 @@ function respond() {
     this.res.writeHead(200);
     postMessage("You can't do this!");
     this.res.end();
+  }
   else if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
     postMessage(cool());
